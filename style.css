@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #000;
+	font-family: 'Assistant', sans-serif;
+	font-size: 15px;
+	background-color: #F5F4F2;
+}
+
+/* ----------------NAVBAR--------------- */
+#navBar{
+	background-color: #4a4f54;
+	height: 65px;
+}
+
+#barraNav {
+	background-color: rgba(33, 37, 41, 0.8);
+	text-align: center;
+	position: fixed;
+}
+
+#barraNav 
+li {
+	display: inline;
+	line-height: 50px;
+}
+
+#barraNav
+a:link,
+a:visited {
+	color: #FFF;
+	padding: 20px;
+	padding-top: 15px;
+	padding-bottom: 32px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#barraNav 
+a:hover,
+a:active {
+	border-radius: 2px;
+	padding-top: 15px;
+	padding-bottom: 40px;
+	background-color: #8C1C1C;
+	text-shadow: 50px 50px 50px #000;
+}
+
+.formulaNav 
+a {
+	background-image: url("../media/ouro.gif");
+	background-size: 115px 115px;
+}
+
+/* ----------------BODY--------------- */
+.imagemPrinc{
+	margin-left: 530px;
+	box-shadow: ;
+}
+
+.butaoCanvas {
+	margin-left: 560px;
+}
+
+.formulaDiv {
+	padding-left: 320px;
+	/*background-image: url("../media/fundoformula.jpg");
+	background-repeat: no-repeat;*/
+}
+
+#formula {
+	height: 800px;
+}
+
+#regra {
+	height: 1400px;
+	font-size: 20px;
+}
+
+#exemplo {
+	height: 2300px;
+	font-size: 20px;
+}
+
+#veja{
+	height: 700px;
+}
+/* ----------------TEXTOS--------------- */
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.textosP {
+	margin-left: 40px;
+	text-indent: 20px;
+}
+
+.HTextos {
+	text-align: center;
+	font-family: 'Pattaya', sans-serif;
+}
+
+form {
+	border-radius: 8px solid #000;
+}
+
+/* ----------------OUTROS--------------- */
+
+
+/* ----------------FOOTER--------------- */
+footer {
+	font-family: 'Assistant', sans-serif;
+	color: #FFF;
+	background-color: #212529;
+	text-align: center;
+}
+
+.ContatoFooter {
+	color: #7a7a7a;
+}
