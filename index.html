@@ -1,452 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+  <head>
+    <link rel="stylesheet" href="style.css">
 
-<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet"> <!-- font-family: 'Pattaya', sans-serif;    -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet"> <!-- font-family: 'Nunito Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet"> <!-- font-family: 'Alex Brush', cursive; -->
 
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link href="fontsawesome/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<title>Regra de 3 Online</title>
-</head>
+	<title>Calculadora de Regra de 3</title>
+  </head>
 
 <body>
-
-	<!-- Responsive Bootstrap col-lg-12 col-md-12 col-sm-12 col-xs-12 -->
-
-	<!-- ------------------------------------------------------------------------------------- -->
-	<!-- |                                      #NAV.BAR                                     | -->
-	<!-- ------------------------------------------------------------------------------------- -->
-<section id="navBar">
-	<div class="container-fluid">
-		<div class="row">
-				<nav id="barraNav">
-					<ul style="padding-right: 40px;">
-						<li><a href="#regra">Regra de 3</a></li>
-						<li class="formulaNav"><a href="#formula" style="color: #000; font-size: 17px"><b>Fórmula</b></a>
-						</li>
-						<li><a href="#exemplo">Exemplos</a></li>
-					</ul>
-				</nav>
-		</div>
-	</div>
-</section>
-	<div class="container">
-
-		<!-- ------------------------------------------------------------------------------------- -->
-		<!-- |                                      #FORMULA                                     | -->
-		<!-- ------------------------------------------------------------------------------------- -->
-
-		<section id="formula">
-			<br><br><br><br>
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<img class="imagemPrinc" src="media/logo.png" width="250">
-				</div>
-			</div>
-			<br>
-
-			<!-- ======================CANVAS====================== -->
-
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-				<button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-					aria-controls="offcanvasRight">Explicação da Fórmula</button>
-				</div>
-			</div>
-
-			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-				aria-labelledby="offcanvasRightLabel">
-
-				<!-- --------------------Header Canvas-------------------- -->
-				<div class="offcanvas-header bg-dark">
-					<h5 id="offcanvasRightLabel" style="color:#FFF; text-transform: uppercase;">Explicação da Fórmula
-					</h5>
-					<button type="button" class="btn-close text-reset btn-light bg-light" data-bs-dismiss="offcanvas"
-						aria-label="Close"></button>
-				</div>
-				<div class="offcanvas-body">
-
-					<!-- --------------------Widget e Texto Arthur-------------------- -->
-					<div class="row">
-						<div class="col">
-							<p class="" style="margin-top: 50px; margin-left: 10px;">Olá meu caro estudante, me chamo
-								<b>Arthur</b> e estou aqui para te ajudar! <i class="fas fa-grin-wink"></i></p>
-						</div>
-						<div class="col">
-							<img src="media/widget.png" width="180">
-						</div>
-					</div>
-					<!-- --------------------Texto Canvas-------------------- -->
-					<table class='table'>
-						<td>
-						<th>
-							<h2 class="HTextos">Regra de três Simples</h2>
-						</th>
-						</td>
-					</table>
-
-					<br>
-
-					<div class="row">
-						<h6 style="text-align: center;"><i><b>X</b> está para <b>Y</b> assim como <b>Z</b> está para
-								___</i></h6>
-
-						<br>
-
-						<p><i class="fas fa-long-arrow-alt-right"></i> Primeiramente, você tem que localizar os outros 3
-							números presentes na lógica do problema que deseja resolver;</p>
-						<p><i class="fas fa-long-arrow-alt-right"></i> Após identificá-los, coloque-os, na ordem que seu
-							exercício pede, na fórmula do site;</p>
-
-						<table class='table'>
-							<td>
-							<th></th>
-							</td>
-						</table>
-
-						<p><b>Exemplo simples:</b></p>
-						<p style="text-indent: 20px;"> Para fazer um bolo de limão utiliza-se 250 ml do suco da fruta. Porém, foi
-							feito uma encomenda de 6 bolos. Quantos limões serão necessários?</p>
-
-						<br><br>
-
-						<div class="row ms-1">
-							<div class="col ms-5">Bolos</div>
-							<div class="col ms-5">Limões(ml)</div>
-						</div>
-						<img src="media/exemploCanvas.png" width="100" style="margin-bottom: 25px;">
-
-						<br><br><br>
-
-						<p><i class="fas fa-long-arrow-alt-right"></i> 1 bolo de limão está para 250ml assim como 6
-							bolos está para <b>X</b> ml de limões.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- ===================FORMULARIO=================== -->
-
-			<br><br>
-			<div class="formulaDiv row">
-					<div class="col">
-						<form action="" method="GET">
-							<input type="number" name="Num1" placeholder="1° número" style="text-align: center;">
-
-							<input type="number" name="Num3" placeholder="3° número" style="text-align: center;">
-		
-							<input type="number" name="Num2" placeholder="2° número" style="text-align: center;">
-
-							<h3 style="margin-left: 70px;"><i class="fas fa-times"></i></h3>
-						</form>
-					</div>
-			</div>
-
-			<br>
-
-			<!-- ----------------------Formula---------------------- -->
-
-			<br><br>
-
-			<div style="margin-left:610px;"><input class="btn btn-dark" type="submit" value="Calcular"></div>
-
-			<br><br><br>
-
-			<!-- <script type="text/javascript">
-
-					var Num1;
-					var Num2;
-					var Num3;
-					const resposta;
-					calcular_btn.addEventListener(MouseEvent.click, calcular);
-
-					function calcular(MouseEvent):void{
-					Number(resposta) = Number(Num3) * Number(Num2) / Number(Num1);
-					}
-
-					</script> -->
-
-			<form style="text-align: center;"><input type="text" name="resposta" placeholder="Resposta"
-					style="text-align: center;"></form>
-
-			<br><br><br><br><br>
-
-			<table class='table'><td><th></th></td></table>
-		</section>
-
-		<!-- ------------------------------------------------------------------------------------- -->
-		<!-- |                                   #REGRA DE TRES                                  | -->
-		<!-- ------------------------------------------------------------------------------------- -->
-
-		<section id="regra">
-
-			<br><br><br><br>
-
-			<h2 class="HTextos" style="margin-right: 50px;">Regra de Três Simples</h2>
-
-			<br><br><br>
-
-			<div class="row">
-				<div class="col">
-					<table class='table'>
-						<td>
-						<th></th>
-						<h4 style="font-family: 'Pattaya', sans-serif; margin-left: 70px;">O que é uma Regra de 3?</h4>
-						</th>
-						</td>
-					</table>
-					<p class="textosP">
-						Primeiramente temos que entender o que é uma Regra de Três.
-					</p>
-					<p class="textosP">
-						A regra de três simples, na matemática, é uma forma de descobrir um valor a partir de outros três, 
-						divididos em pares relacionados cujos valores têm mesma grandeza e unidade. Além da regra de três simples, 
-						existe também a regra de três composta.
-					</p>
-
-				<br><br>
-
-					<p class="textosP">
-						A regra de três, na matemática, é uma forma de se descobrir uma quha para outra conhecida a
-						mesma relação que têm entre si entre outros dois valores numéricos conhecidos. Existem dois
-						tipos de regra de três: simples e composta.
-					</p>
-					<p class="textosP">
-						Realizar os cálculos é necessário verificar a relação entre os pares de grandezas: 
-						se são diretamente ou inversamente proporcionais. De maneira mais prática, se quando o 
-						valor de a1 crescer, o de b1 também crescer, são grandezas diretamente proporcionais. 
-						O mesmo vale para a2 e b2.
-					</p>
-				</div>
-				<div class="col">
-					<img src="media/regra1.png" width="370" style="margin-left: 100px;">
-
-					<br><br><br>
-
-					<img src="media/regra2.png" width="250" style="margin-left: 130px;">
-				</div>
-			</div>
-			<br>
-			<br>
-			<div class="row">
-				<p class="textosP">
-					Quando grandezas são diretamente proporcionais, deve-se usar o seguinte modelo de cálculo:
-				</p>
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
-						<p>10</p>
-						<p>__</p>
-						<p>82</p>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
-						<p>30</p>
-						<p>__</p>
-						<p><b>X</b>= 246</p>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<p class="textosP">
-					Quando forem inversamente proporcionais, uma das frações do modelo acima deve ser invertida:
-				</p>
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
-						<p>15</p>
-						<p>__</p>
-						<p>10</p>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
-						<p>80</p>
-						<p>__</p>
-						<p><b>X</b>= 53,33</p>
-					</div>
-				</div>
-			</div>
-			<br><br>
-
-			<table class='table'><td><th></th></td></table>
-
-		</section>
-
-<!-- ------------------------------------------------------------------------------------- -->
-<!-- |                                      #EXEMPLO                                     | -->
-<!-- ------------------------------------------------------------------------------------- -->
-
-		<section id="exemplo">
-			<br><br><br><br>
-				<h2 class="HTextos" style="margin-right: 50px;">Exemplos</h2>
-			<br><br>
-			<p class="text-center" style="padding-right: 35px;">
-				Que tal praticarmos um pouco? 
-			</p>
-			<br>
-			<p class="textosP"><b>1)</b> Um atleta percorre 35 km em 3 horas. Mantendo o mesmo ritmo, em quanto tempo ele percorrerá 50 km?</p> 
-			<p class="textosP">Segue a tabela:</p>
-
-					<table width="250" border="2" style="margin-left: 500px;">
-						<tr>
-						  <th style="padding-left: 10px;">KM (Quilômetros)</th>
-						  <th>Horas</th> 
-						</tr>
-						<tr>
-						  <td style="padding-left: 80px;">35</td>
-						  <td style="padding-left: 20px;">3</td>
-						</tr>
-						<tr>
-						  <td style="padding-left: 80px;">50</td>
-						  <td style="padding-left: 20px;">x</td>
-						</tr>
-					  </table>
-			<br><br>		  
-					  <p class="textosP">Multiplique-os cruzado!</p>
-					  <p class="textosP">35X = 150</p>
-					  <p class="textosP">Passamos o que multiplica o x (no caso, 35) para o denominador do outro lado, dividindo-o:</p>
-			<br>
-					  <p class="textosP" style="line-height: 0%;">X = 150</p>
-					  <p class="textosP" style="margin-left: 70px; line-height: 1px;">__</p>
-					  <p class="textosP" style="margin-left: 70px; line-height: 20px;">35</p>
-			<br>
-					  <p class="textosP">X =  4,29</p>
-					  <p class="textosP">Como o exercício pede em horas exatas, o 0,29 presente no resultado não está convertido para minutos corretamente, </p><p class="textosP">então utilizaremos a lógica 0,29 x 60min que é igual a 17,4 minutos</p>
-					  <p class="textosP">o resultado é <b>4 horas e 17 minutos.</b></p>
-			<br><br>
-					  <hr width="250" style="margin-left: 500px;">
-			<br>
-			<p class="textosP"><b>2)</b> João comprou 5 barras de chocolate Gourmet e pagou R$200,00. Quanto ela pagaria se comprasse 12 barras do mesmo tipo e preço?</p> 
-			<p class="textosP">Segue a tabela:</p>
-
-					<table width="200" border="2" style="margin-left: 500px;">
-						<tr>
-						  <th style="padding-left: 20px;">Camisetas</th>
-						  <th>Preço</th>
-						</tr>
-						<tr>
-						  <td style="padding-left: 55px;">5</td>
-						  <td style="padding-left: 10px;">200</td>
-						</tr>
-						<tr>
-						  <td style="padding-left: 50px;">12</td>
-						  <td style="padding-left: 20px;">x</td>
-						</tr>
-					</table>
-
-					  <p class="textosP">Multiplique-os cruzado!</p>
-					  <p class="textosP">5X = 2400</p>
-					  <p class="textosP">Passamos o que multiplica o x (no caso, 5) para o denominador do outro lado, dividindo-o:</p>
-			<br> 
-					  <p class="textosP" style="line-height: 0%;">X = 2400</p>
-					  <p class="textosP" style="margin-left: 70px; line-height: 1px;">____</p>
-					  <p class="textosP" style="margin-left: 85px; line-height: 20px;">5</p>
-			<br>
-					  <p class="textosP">X =  480,00</p>
-			<br><br>
-					  <hr width="250" style="margin-left: 500px;">
-			<br>
-					  <p class="textosP"><b>3)</b> <i style="font-size: 15px;">(Questão do Enem de 2012)</i> Uma mãe recorreu à bula para verificar a dosagem de um remédio que precisava dar a seu filho. Na bula, recomendava-se a seguinte dosagem: 5 gotas para cada 2kg de massa corporal a cada 8 horas.Se a mãe ministrou corretamente 30 gotas do remédio a seu filho a cada 8 horas, então a massa corporal dele é de:</p> 
-					  <p class="textosP">Segue a tabela:</p>
-
-					<table width="200" border="2" style="margin-left: 500px;">
-						<tr>
-						  <th style="padding-left: 20px;">Gotas</th>
-						  <th>Massa(kg)</th>
-						</tr>
-						<tr>
-						  <td style="padding-left: 40px;">5</td>
-						  <td style="padding-left: 30px;">2</td>
-						</tr>
-						<tr>
-						  <td style="padding-left: 35px;">30</td>
-						  <td style="padding-left: 30px;">x</td>
-						</tr>
-					</table>
-
-					  <p class="textosP">Multiplique-os cruzado!</p>
-					  <p class="textosP">5X = 60</p>
-					  <p class="textosP">Passamos o que multiplica o x (no caso, 5) para o denominador do outro lado, dividindo-o:</p>
-			<br> 
-					  <p class="textosP" style="line-height: 0%;">X = 60</p>
-					  <p class="textosP" style="margin-left: 70px; line-height: 1px;">__</p>
-					  <p class="textosP" style="margin-left: 75px; line-height: 20px;">5</p>
-			<br>
-					  <p class="textosP">X =  12 kg</p>
-			<br><br>
-			<table class='table'><td><th></th></td></table>
-		</section>
-		<section id="veja">
-			<br><br><br><br><br>
-			<h1 class="HTextos">Veja Também</h1>
-			<br><br><br>
-
-			<div class="row" style="padding-left: 70px;">
-				<div class="col">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/0ELJU4NEwSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<br><br>
-					<h6>COMO SOMAR OS NÚMEROS DE UM TEXTO (STRING) COM PYTHON [DICA FÁCIL]</h6>
-					<br>
-					<hr width="560">
-				</div>
-				<div class="col">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/uwnO4gVJ500" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<br><br>
-					<h6>COMO FUNCIONA A FUNÇÃO BUILT-IN INT() DO PYTHON ?</h6>
-					<br>
-					<hr width="560">
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<br><br><br><br>
-
-	<!-- ------------------------------------------------------------------------------------- -->
-	<!-- |                                       RODAPÉ                                      | -->
-	<!-- ------------------------------------------------------------------------------------- -->
-
-	<footer class="container-fluid">
-		<br>
-		<div class="row">
-			<div class="col">
-				<img src="media/pythonCom.png" width="140" style="margin-top: 10px;">
-				<p>Curte programação? Me siga nas redes sociais</p>
-				<button type="button" class="btn bg-light"><b><a href="https://www.instagram.com/pythoncomentado/"
-							style="color:#000;" target="_blank"><i class="fab fa-instagram"></i></a></b></button>
-				<button type="button" class="btn bg-light"><b><a
-							href="https://www.youtube.com/channel/UCVXuydo0t3N5PomC8c6PRkA" style="color:#000;"
-							target="_blank"><i class="fab fa-youtube"></i></a></b></button>
-			</div>
-			<div class="col">
-				<p>&copy; 2021 Arthur Antonoff dos Santos</p>
-
-				<br><br><br><br><br><br><br><br>
-
-				<a class="ContatoFooter" href="https://www.instagram.com/viniii.css/" target="_blank">Site e Artes feitas por Vinícius Miranda</a>
-			</div>
-			<div class="col">
-				<img src="media/widget.png" width="150" style="margin-top: 10px;">
-				<p style="margin-bottom: 5px;">Qualquer dúvida, entre em contato comigo</p>
-				<p style="margin-bottom: 5px; color: #7a7a7a;">arthur.antonoff@gmail.com</p>
-			</div>
-		</div>
-		<br><br>
-		<!-- <button type="button" class="btn btn-primary"><i class="fab fa-instagram"></i></button> -->
-	</footer>
-
-
-	<script src="js/jquery-3.3.1.slim.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
-</body>
-
+	<section id="calculadoraFundo">
+        <div class="conteudoCalc">
+            <div class="tituloCalc">
+                <a href="#conteudo"><h1>Regra de <b>3</b> Online</h1></a>
+            </div> <!--tituloCalc-->
+          
+            <div class="calculadora">
+              <div class="varLadoCima">
+                <label>Var. I</label>
+                <input type="text" id="num1" size="8" maxlength="8">
+                <i class="fa-solid fa-arrows-left-right fa-2x"></i>
+                <input type="text" id="num2" size="8" maxlength="8">
+                <label>Var. II</label>
+              </div> <!--varLadoEsq-->
+
+              <div class="varLadoBaixo">
+                <label>Var. III</label>
+                <input type="text" id="num3" size="8" maxlength="8">
+                <i class="fa-solid fa-arrows-left-right fa-2x"></i>
+                <input type="text" id="num4" size="8" maxlength="8">
+                <label>Var. IV</label>
+              </div> <!--varLadoDir-->
+
+              <div class="respostas">
+                <input type="submit" onclick="calcular()" value="Calcular">
+                <div id="resposta"></div>
+                
+              </div>
+              <div class="textoTitulo">
+                <hr>
+                <p>Se a Regra de 3 for diretamente proporcional, utiliza-se a razão <b>Var. I para Var. II & Var. III para Var. IV</b></p>
+                <p>Se a Regra de 3 for inversamente proporcional, utiliza-se a razão <b>Var. III para Var. I & Var. II para Var. IV</b></p>
+              </div>
+            </div> <!--calculadora-->
+
+        <script>
+              
+        </script> 
+
+        </div> <!--conteudoCalc-->
+    </section> <!--calculadoraFundo-->
+    <section id="conteudo">
+      <h2> O que é uma Regra de Três?</h2>
+      <p>
+       É um método proporcional utilizado para encontrar um quarto valor, normalmente quando já têm-se os 
+       outros 3 valores. Abrange outros conhecimento tais como grandezas, medidas, razões, proporções e etc.
+      </p>
+      <p>
+        Ao começar a fragmentar a questão procurando as grandezas e os valores, você não pode apenas joga-los 
+        de qualquer jeito na "fórmula padrão" da regra de três, você primeiro tem que identificar as grandezas 
+        e descobrir se as grandezas são Diretamente ou Inversamente Proporcionais, confira abaixo o que significa 
+        cada um desses tipos.
+      </p>
+      <br><br><br><br>
+      <h3>Grandezas Diretamente Proporcionais</h3>
+      <p>
+        Esses tipos são simples de se compreender e determinar dentro de uma questão, neste caso, você terá que
+        utilizar os valores que já tem e verificar se elas são diretas, ou seja, se as duas grandezas são crescentes 
+        ou decrescentes igualmente 
+      </p>
+      <p>
+        Para guia-lo melhor, vamos utiliza-la na prática com uma questão do ENEM (Exame Nacional do Ensino Médio) 
+        que caiu na prova de 2012.
+      </p>
+      <br>
+      <div class="questao">
+        <p>
+          <b>1)</b> Uma mãe recorreu à bula para verificar a dosagem de um remédio que precisava dar a seu filho. Na bula, 
+          recomendava-se a seguinte dosagem: 5 gotas para cada 2kg de massa corporal a cada 8 horas.
+          Se a mãe ministrou corretamente 30 gotas do remédio a seu filho a cada 8 horas, então a massa 
+          corporal dele é de:
+        </p>
+        <p>a) 12kg</p>
+        <p>b) 16kg</p>
+        <p>c) 24kg</p>
+        <p>d) 36kg</p>
+        <p>e) 75kg</p>
+        <br><br>
+        <p>
+          <b>RESOLUÇÃO:</b> Analisando as grandezas, temos 2 (Gotas e Massa do filho), agora veremos se ela é
+          diretamente ou inversamente proporcionais:
+        </p>
+          <img src="imagens/questao1.png" alt="">
+        <p>
+          As setas vermelhas indicam que que as grandezas são crescentes, ou seja elas sempre vão aumentar, 
+          sendo assim são Diretamente Proporcionais. Posto isto basta multiplicarmos cruzado igual indica o X em azul.
+        </p>
+        <br>
+        <p>5x = 60</p>
+        <p>x = 60 / 5</p>
+        <p>x = 12 kg </p>
+        <p> <i class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i> <b>Resposta:</b> Letra A</p>
+      </div>
+      <br> <br> <br>
+      <hr>
+      <br> <br> <br>
+      <h3>Grandezas Inversamente Proporcionais</h3>
+      <p>
+        Neste tipo, para que as grandezas sejam inversamente proporcionais, o aumento de uma das medidas faz com com que a outra 
+        diminua proporcionalmente 
+      </p>
+      <p>
+        Para guia-lo melhor, vamos utiliza-la na prática com uma questão do ENEM (Exame Nacional do Ensino Médio) 
+        que caiu na prova de 2012.
+      </p>
+    </section>
+    
+    
+    <script src="https://kit.fontawesome.com/b7b3825ffa.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
+
+
+
+
+<!--
+
+          /*        for (let i = 0; i < respuesta.length; i++) {
+                    let input = respuesta[i];
+
+                   input.addEventListener("input", function (e) {
+                      let value = parseFloat(e.target.value); */
+
+                     
+
+switch (e.target.name) {
+                      case (varI == 'x'):
+                        respuesta.value = (varII * varIII / varIV).toFixed(2);
+                        console.log(respuesta);
+                        break;
+
+                      case (varII == 'x'):
+                        respuesta.value = (varI * varIV / varIII).toFixed(2);
+                        console.log(respuesta);
+                        break;
+
+                      case (varIII == 'x'):
+                        respuesta.value = (varI * varIV / varII).toFixed(2);
+                        console.log(respuesta);
+                        break;
+
+                      case (varIV == 'x'):
+                        respuesta.value = (varII * varIII / varI).toFixed(2);
+                        console.log(respuesta);
+                        break;
+                      }
+-->
