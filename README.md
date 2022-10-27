@@ -4,7 +4,7 @@
 
 <h2>➛ Este programa utiliza as seguintes tecnologias:</h2>
 
-![Badge](https://img.shields.io/badge/Linguagem_Principal-JavaScript-%237159c1?style=for-the-badge&logo=javascript)
+![Badge](https://img.shields.io/badge/Linguagem_Principal-PHP-%237159c1?style=for-the-badge&logo=php)
 
 ![Badge](https://img.shields.io/badge/Estrutura-HTML-%237159c1?style=for-the-badge&logo=html5)
 
@@ -17,10 +17,14 @@
 
 <h2>➛ Como preparar o ambiente para inicia-lo:</h2>
 
-  - [ ] Em Construção...
+  - [x] Baixar Xampp;
+  - [x] Iniciar o Apache dentro do Xampp;
+  - [x] Copiar o arquivos deste repositório e colocar dentro do 'htdocs'(dentro da pasta nativa do xampp);
+  - [x] Voltar no Xampp e clicar em 'Admin' no Apache;
+  - [ ] Pronto!
 
 <hr>
-<h1 align="center"> 🚧 </h1>
+<h1 align="center"> <img align="center" height="480em" src="https://github.com/devvmg/Regra-de-3/blob/PiriProjects/regrade3.png"> </h1>
 <hr>
 <p align="center">Acesse meu site e entre em contato comigo!</p>
 <p align="center">http://devvini.com/</p>
